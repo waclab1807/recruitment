@@ -1,0 +1,65 @@
+$orange: #ff7d59;
+$blue: #0dccbb;
+
+.users-table {
+
+  .table-header {
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .button {
+    background-color: $blue;
+  }
+
+  select {
+    border: none;
+    height: 34px;
+    width: 40px;
+    border-radius: 5px;
+    background-color: $orange;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+
+  .table-options {
+    .col-lg-4:last-of-type {
+      text-align: right;
+    }
+    .results {
+      color: $orange;
+      font-weight:bold;
+    }
+  }
+
+  .pagination {
+    display: inline;
+    margin: 0;
+    text-align: center;
+    ul {
+      padding: 0 10px;
+      display: inline;
+      li {
+        cursor: pointer;
+        padding: 0 3px;
+        display: inline;
+        &:hover {
+          font-weight: bold;
+        }
+        &:after {
+          content: '|';
+          margin-left: 5px;
+          font-weight: normal;
+        }
+        &:last-of-type:after {
+          content: '';
+        }
+      }
+    }
+    .active-page {
+      font-weight: bold;
+    }
+  }
+}

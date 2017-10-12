@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html lang="en" ng-app="myApp" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en" ng-app="myApp" class="no-js"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>AngularJS App</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="icon"
+        type="image/png"
+        href="http://www.favicon.cc/logo3d/375421.png">
+
+  <link rel="stylesheet" href="bower_components/angular-data-table/release/dataTable.css">
+  <link rel="stylesheet" href="bower_components/angular-data-table/release/material.css">
+  <link rel="stylesheet" href="bower_components/angular-notify/dist/angular-notify.min.css">
+  <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="bower_components/components-font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="components/styles/main.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-default navbar-fixed-top" ng-controller="MainCtrl">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#">AngularJS app</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li ng-class="{ active: isActive('/commentsView')}"><a href="#!/commentsView">Komentarze</a></li>
+        <li ng-class="{ active: isActive('/chartView')}"><a href="#!/chartView">Wykres</a></li>
+        <li ng-class="{ active: isActive('/tableView')}"><a href="#!/tableView">Tabela danych</a></li>
+        <li ng-class="{ active: isActive('/formView')}"><a href="#!/formView">TODO</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div ng-view class="slide"></div>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="bower_components/angular-data-table/release/dataTable.js"></script>
+  <script src="bower_components/angular-notify/dist/angular-notify.min.js"></script>
+  <script src="bower_components/angular-spinner/dist/angular-spinner.min.js"></script>
+  <script src="bower_components/angular-local-storage/dist/angular-local-storage.min.js"></script>
+  <!--for some reasons it's not working with bower packages (possibly deprecated?)-->
+  <script src="//code.highcharts.com/stock/highstock.src.js"></script>
+  <script src="//rawgithub.com/pablojim/highcharts-ng/master/src/highcharts-ng.js"></script>
+  <script src="//code.angularjs.org/latest/angular-animate.js"></script>
+
+  <script src="app.js"></script>
+  <script src="components/js/config.js"></script>
+  <script src="components/js/mainController.js"></script>
+  <script src="commentsView/comments.js"></script>
+  <script src="chartView/charts.js"></script>
+  <script src="tableView/table.js"></script>
+  <script src="formView/form.js"></script>
+  <script src="components/js/directives.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+<div class="comments container" ng-init="getComments(0, limitNr)">
+    <h2 class="text-center">Komentarze</h2>
+
+    <span us-spinner spinner-on="loader" class="spinner"></span>
+
+    <ul ng-repeat="comment in comments">
+        <single-comment comment="comment"></single-comment>
+    </ul>
+
+    <button ng-click="loadMore()" class="btn btn-primary button load-more-btn" ng-show="!allCommentsDownloaded">Załaduj kolejne</button>
+
+    <div ng-show="comments.length == 0" class="well">Brak komentarzy</div>
+
+</div>

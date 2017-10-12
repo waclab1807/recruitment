@@ -1,0 +1,109 @@
+.users-table .table-header {
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center; }
+
+.users-table .button {
+  background-color: #0dccbb; }
+
+.users-table select {
+  border: none;
+  height: 34px;
+  width: 40px;
+  border-radius: 5px;
+  background-color: #ff7d59; }
+  .users-table select:hover {
+    cursor: pointer; }
+
+.users-table .table-options .col-lg-4:last-of-type {
+  text-align: right; }
+
+.users-table .table-options .results {
+  color: #ff7d59;
+  font-weight: bold; }
+
+.users-table .pagination {
+  display: inline;
+  margin: 0;
+  text-align: center; }
+  .users-table .pagination ul {
+    padding: 0 10px;
+    display: inline; }
+    .users-table .pagination ul li {
+      cursor: pointer;
+      padding: 0 3px;
+      display: inline; }
+      .users-table .pagination ul li:hover {
+        font-weight: bold; }
+      .users-table .pagination ul li:after {
+        content: '|';
+        margin-left: 5px;
+        font-weight: normal; }
+      .users-table .pagination ul li:last-of-type:after {
+        content: ''; }
+  .users-table .pagination .active-page {
+    font-weight: bold; }
+
+.chart #chart .highcharts-legend-item text {
+  font-size: 16px !important; }
+
+.chart #chart > div {
+  margin: 0 auto; }
+
+.comments ul {
+  list-style-type: none; }
+
+.comments .load-more-btn {
+  display: block;
+  margin: 0 auto 20px auto; }
+
+.comments .single-comment {
+  box-shadow: 1px 1px 2px black; }
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url("../fonts/pt-sans.regular.ttf"); }
+
+* {
+  font-family: 'PT Sans', 'RobotoDraft', 'Roboto', 'Helvetica Neue, Helvetica, Arial', sans-serif; }
+
+.button {
+  box-shadow: 1px 1px 2px black;
+  font-weight: bold; }
+
+.active {
+  font-weight: bold; }
+
+.spinner {
+  position: fixed;
+  z-index: 999;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 2em;
+  width: 2em;
+  margin: auto; }
+
+.slide {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%; }
+
+.slide.ng-enter,
+.slide.ng-leave {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+.slide.ng-enter {
+  left: 100%; }
+
+.slide.ng-enter-active {
+  left: 0; }
+
+.slide.ng-leave {
+  left: 0; }
+
+.slide.ng-leave-active {
+  left: -100%; }

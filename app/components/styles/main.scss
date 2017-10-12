@@ -1,0 +1,59 @@
+@import "table.scss";
+@import "form.scss";
+@import "chart.scss";
+@import "comments.scss";
+
+@font-face {
+  font-family: 'PT Sans';
+  src: url('../fonts/pt-sans.regular.ttf');
+}
+
+* {
+  font-family: 'PT Sans', 'RobotoDraft', 'Roboto', 'Helvetica Neue, Helvetica, Arial', sans-serif;
+}
+
+.button {
+  box-shadow: 1px 1px 2px black;
+  font-weight: bold;
+}
+
+.active {
+  font-weight: bold;
+}
+
+.spinner {
+  position: fixed;
+  z-index: 999;
+  top: 100px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  height: 2em;
+  width: 2em;
+  margin: auto;
+}
+
+// animations between views
+.slide {
+  position: absolute;
+  left: 0;
+  top: 50px;
+  width: 100%;
+}
+.slide.ng-enter,
+.slide.ng-leave {
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+.slide.ng-enter {
+  left: 100%;
+}
+.slide.ng-enter-active {
+  left: 0;
+}
+.slide.ng-leave {
+  left: 0;
+}
+.slide.ng-leave-active {
+  left: -100%;
+}
